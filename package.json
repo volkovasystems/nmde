@@ -1,6 +1,6 @@
 {
   "name": "nmde",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Get string name property of entity.",
   "main": "nmde.js",
   "support": "nmde.support.js",
@@ -23,6 +23,9 @@
     "nmde"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "contributors": [
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/volkovasystems/nmde/issues"
@@ -30,9 +33,9 @@
   "homepage": "https://github.com/volkovasystems/nmde#readme",
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "falzy": "^0.19.0",
-    "protype": "^0.21.0",
-    "truly": "^0.18.0"
+    "falzy": "^0.20.0",
+    "protype": "^0.22.0",
+    "truly": "^0.19.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -40,6 +43,6 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "source-map-loader": "^0.2.1",
-    "webpack": "^2.5.0"
+    "webpack": "^2.6.1"
   }
 }
