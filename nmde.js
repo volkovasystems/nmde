@@ -36,7 +36,8 @@
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
 			"contributors": [
-				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+				"Vinse Vinalon <vinsevinalon@gmail.com>"
 			],
 			"repository": "https://github.com/volkovasystems/nmde.git",
 			"test": "nmde-test.js",
@@ -51,14 +52,12 @@
 	@include:
 		{
 			"falzy": "falzy",
-			"protype": "protype",
 			"truly": "truly"
 		}
 	@end-include
 */
 
 const falzy = require( "falzy" );
-const protype = require( "protype" );
 const truly = require( "truly" );
 
 const EMPTY_NAME = "";
@@ -80,7 +79,7 @@ const nmde = function nmde( entity ){
 		return EMPTY_NAME;
 	}
 
-	if( truly( entity.name ) && protype( entity.name, STRING ) ){
+	if( truly( entity.name ) && typeof entity.name == "string" ){
 		return entity.name;
 	}
 
