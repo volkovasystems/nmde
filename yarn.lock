@@ -4130,9 +4130,9 @@ trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
 
-truly@^0.19.0:
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/truly/-/truly-0.19.0.tgz#776080d30870549d62dcf258588287f403aa814e"
+truly@^0.20.0:
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/truly/-/truly-0.20.0.tgz#d751565112b9408b3ea007ea7919e900d2856992"
   dependencies:
     babel-runtime "^6.23.0"
 
