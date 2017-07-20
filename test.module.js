@@ -74,6 +74,20 @@ describe( "nmde", ( ) => {
 
 	describe( "`nmde( { 'name': 'yeah' } )`", ( ) => it( "should return 'yeah'", ( ) => assert.equal( nmde( { 'name': 'yeah' } ), "yeah", "should return 'yeah'" ) ) );
 
+	describe( "`nmde( function hello( ){ } )`", ( ) => it( "should return 'hello'", ( ) => assert.equal( nmde( function hello( ){ } ), "hello" ) ) );
+
+	describe( "`nmde( Error )`", ( ) => it( "should return 'Error'", ( ) => assert.equal( nmde( Error ), "Error" ) ) );
+
+	describe( "`nmde( ) == ''`", ( ) => it( "should return true", ( ) => assert.equal( nmde( ) == "", true ) ) );
+
+	describe( "`nmde( 'test' ) == ''`", ( ) => it( "should return true", ( ) => assert.equal( nmde( "test" ) == "", true, "should return true" ) ) );
+
+	describe( "`nmde( { } ) == ''`", ( ) => it( "should return true", ( ) => assert.equal( nmde( { } ) == "", true ) ) );
+
+	describe( "`nmde( ( ) => { } ) == ''`", ( ) => it( "should return true", ( ) => assert.equal( nmde( ( ) => { } ) == "", true ) ) );
+
+	describe( "`nmde( ( entity ) => ( typeof entity == 'string' ) ) == ''`", ( ) => it( "should return true", ( ) => assert.equal( nmde( ( entity ) => ( typeof entity == "string" ) ) == "", true ) ) );
+
 	//: @end-bridge
 
 	//: @bridge:
@@ -95,25 +109,3 @@ describe( "nmde", ( ) => {
 	//: @end-bridge
 
 } );
-
-
-/*
-assert.equal( nmde( { "name": "yeah" } ), "yeah", "should return 'yeah'" )
-
-assert.equal( nmde( function hello( ){ } ), "hello", "should return 'hello'" )
-
-assert.equal( nmde( Error ), "Error", "should return 'Error'" )
-
-assert.equal( nmde( ) == "", true, "should return true" )
-
-assert.equal( nmde( "test" ) == "", true, "should return true" )
-
-assert.equal( nmde( { } ) == "", true, "should return true" )
-
-assert.equal( nmde( function( ){ } ) == "", true, "should return true" )
-
-assert.equal( nmde( ( ) => { } ) == "", true, "should return true" )
-
-assert.equal( nmde( ( entity ) => ( typeof entity == "string" ) ) == "",
-				true, "should return true" )
-*/
