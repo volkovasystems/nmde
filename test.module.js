@@ -39,7 +39,7 @@
 				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
 				"Vinse Vinalon <vinsevinalon@gmail.com>"
 			],
-			"repository": "https://github.com/volkovasystems/numric.git"
+			"repository": "https://github.com/volkovasystems/nmde.git"
 		}
 	@end-test-configuration
 
