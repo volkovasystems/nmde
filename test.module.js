@@ -251,6 +251,31 @@ describe( "nmde", ( ) => {
 
 	} );
 
+
+	describe( "`nmde( ( ) => { } ) == ''`", ( ) => {
+
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => nmde( ( ) => { } ) == "" );
+
+			assert.equal( result.value, true );
+
+		} );
+
+	} );
+
+
+	describe( "`nmde( ( entity ) => ( typeof entity == 'string' ) ) == ''`", ( ) => {
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => nmde( ( entity ) => ( typeof entity == 'string' ) ) == "" );
+
+			assert.equal( result.value, true );
+
+		} );
+	} );
+
+
 } );
 
 
