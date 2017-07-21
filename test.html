@@ -1,43 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>nmde unit test</title>
+		<meta charset="utf-8">
 
-		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+		<title>test:nmde</title>
 
-		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-
-		<script type="application/javascript" src="./nmde.deploy.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 	</head>
 
 	<body>
-		<div id="qunit"></div>
+		<div id="mocha"></div>
 
-		<div id="qunit-fixture"></div>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
 		<script type="application/javascript">
-			QUnit.test( "nmde unit test", function( assert ) {
+			mocha.setup( "bdd" );
+		</script>
 
-				assert.equal( nmde( { "name": "yeah" } ), "yeah", "should have name 'yeah'" );
+		<script type="application/javascript" src="./test.deploy.js"></script>
 
-				assert.equal( nmde( function hello( ){ } ), "hello", "should have name 'hello'" );
-
-				assert.equal( nmde( Error ), "Error", "should return 'Error'" );
-
-				assert.equal( nmde( ) == "", true, "should return true" );
-
-				assert.equal( nmde( "test" ) == "", true, "should return true" );
-
-				assert.equal( nmde( { } ) == "", true, "should return true" );
-
-				assert.equal( nmde( function( ){ } ) == "", true, "should return true" );
-
-				assert.equal( nmde( ( ) => { } ) == "", true, "should return true" );
-
-				assert.equal( nmde( ( entity ) => ( typeof entity == "string" ) ) == "",
-								true, "should return true" );
-
-			} );
+		<script type="application/javascript">
+			mocha.run( );
 		</script>
 	</body>
 </html>
