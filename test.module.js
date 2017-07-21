@@ -69,8 +69,10 @@ const nmde = require( "./nmde.support.js" );
 const path = require( "path" );
 //: @end-bridge
 
+//: @!bridge:
+
+
 describe( "nmde", ( ) => {
-	//: @!bridge:
 
 	describe( "`nmde( { 'name': 'yeah' } )`", ( ) => it( "should return 'yeah'", ( ) => assert.equal( nmde( { 'name': 'yeah' } ), "yeah", "should return 'yeah'" ) ) );
 
@@ -88,24 +90,33 @@ describe( "nmde", ( ) => {
 
 	describe( "`nmde( ( entity ) => ( typeof entity == 'string' ) ) == ''`", ( ) => it( "should return true", ( ) => assert.equal( nmde( ( entity ) => ( typeof entity == "string" ) ) == "", true ) ) );
 
-	//: @end-bridge
+} );
 
-	//: @bridge:
-	/*
+
+
+//: @end-bridge
+
+
+//: @bridge:
+
+
+describe( "nmde", ( ) => {
+
 	let directory = __dirname;
 	let testBridge = path.resolve( directory, "bridge.html" );
 	let bridgeURL = `file://${ testBridge }`;
 
-	describe( <test>, ( ) => {
+	describe( "`nmde( { 'name': 'yeah' } )`", ( ) => {
 
-		it( <message>, ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => <test> );
+		it( "should return 'yeah'", ( ) => {
+			let result = browser.url( bridgeURL ).execute( ( ) => nmde( { 'name': 'yeah' } ) );
 
-			assert.equal( result.value, true );
+			assert.equal( result.value, "yeah" );
 		} );
 
 	} );
-	*/
-	//: @end-bridge
 
 } );
+
+
+//: @end-bridge
