@@ -69,29 +69,98 @@ const nmde = require( "./nmde.support.js" );
 const path = require( "path" );
 //: @end-bridge
 
+
 //: @!bridge:
 
 
 describe( "nmde", ( ) => {
 
-	describe( "`nmde( { 'name': 'yeah' } )`", ( ) => it( "should return 'yeah'", ( ) => assert.equal( nmde( { 'name': 'yeah' } ), "yeah", "should return 'yeah'" ) ) );
 
-	describe( "`nmde( function hello( ){ } )`", ( ) => it( "should return 'hello'", ( ) => assert.equal( nmde( function hello( ){ } ), "hello" ) ) );
+	describe( "`nmde( { 'name': 'yeah' } )`", ( ) => {
 
-	describe( "`nmde( Error )`", ( ) => it( "should return 'Error'", ( ) => assert.equal( nmde( Error ), "Error" ) ) );
+		it( "should return 'yeah'", ( ) => {
 
-	describe( "`nmde( ) == ''`", ( ) => it( "should return true", ( ) => assert.equal( nmde( ) == "", true ) ) );
+			assert.equal( nmde( { 'name': 'yeah' } ), "yeah" );
 
-	describe( "`nmde( 'test' ) == ''`", ( ) => it( "should return true", ( ) => assert.equal( nmde( "test" ) == "", true, "should return true" ) ) );
+		} );
 
-	describe( "`nmde( { } ) == ''`", ( ) => it( "should return true", ( ) => assert.equal( nmde( { } ) == "", true ) ) );
+	} );
 
-	describe( "`nmde( ( ) => { } ) == ''`", ( ) => it( "should return true", ( ) => assert.equal( nmde( ( ) => { } ) == "", true ) ) );
 
-	describe( "`nmde( ( entity ) => ( typeof entity == 'string' ) ) == ''`", ( ) => it( "should return true", ( ) => assert.equal( nmde( ( entity ) => ( typeof entity == "string" ) ) == "", true ) ) );
+	describe( "`nmde( function hello( ){ } )`", ( ) => {
+
+		it( "should return 'hello'", ( ) => {
+
+			assert.equal( nmde( function hello( ){ } ), "hello" );
+
+		} );
+
+	} );
+
+
+	describe( "`nmde( Error )`", ( ) => {
+
+		it( "should return 'Error'", ( ) => {
+
+			assert.equal( nmde( Error ), "Error" );
+
+		} );
+
+	} );
+
+
+	describe( "`nmde( ) == ''`", ( ) => {
+
+		it( "should return true", ( ) => {
+
+			assert.equal( nmde( ) == "", true );
+
+		} );
+
+	} );
+
+
+	describe( "`nmde( 'test' ) == ''`", ( ) => {
+
+		it( "should return true", ( ) => {
+
+			assert.equal( nmde( "test" ) == "", true );
+
+		} );
+
+	} );
+
+
+	describe( "`nmde( { } ) == ''`", ( ) => {
+
+		it( "should return true", ( ) => {
+
+			assert.equal( nmde( { } ) == "", true );
+
+		} );
+
+	} );
+
+
+	describe( "`nmde( ( ) => { } ) == ''`", ( ) => {
+
+		it( "should return true", ( ) => {
+
+			assert.equal( nmde( ( ) => { } ) == "", true );
+
+		} );
+
+	} );
+
+
+	describe( "`nmde( ( entity ) => ( typeof entity == 'string' ) ) == ''`", ( ) => {
+		it( "should return true", ( ) => {
+			assert.equal( nmde( ( entity ) => ( typeof entity == "string" ) ) == "", true )
+		} );
+	} );
+
 
 } );
-
 
 
 //: @end-bridge
@@ -109,9 +178,75 @@ describe( "nmde", ( ) => {
 	describe( "`nmde( { 'name': 'yeah' } )`", ( ) => {
 
 		it( "should return 'yeah'", ( ) => {
+
 			let result = browser.url( bridgeURL ).execute( ( ) => nmde( { 'name': 'yeah' } ) );
 
 			assert.equal( result.value, "yeah" );
+
+		} );
+
+	} );
+
+
+	describe( "`nmde( function hello( ){ } )`", ( ) => {
+
+		it( "should return 'hello'", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => nmde( function hello( ){ } ) );
+
+			assert.equal( result.value, "hello" );
+
+		} );
+
+	} );
+
+	describe( "`nmde( Error )`", ( ) => {
+
+		it( "should return 'Error'", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => nmde( Error ) );
+
+			assert.equal( result.value, "Error" );
+
+		} );
+
+	} );
+
+
+	describe( "`nmde( ) == ''`", ( ) => {
+
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => nmde( ) == "" );
+
+			assert.equal( result.value, true );
+
+		} );
+
+	} );
+
+
+	describe( "`nmde( 'test' ) == ''`", ( ) => {
+
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => nmde( "test" ) == "" );
+
+			assert.equal( result.value, true );
+
+		} );
+
+	} );
+
+
+	describe( "`nmde( { } ) == ''`", ( ) => {
+
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => nmde( { } ) == "" );
+
+			assert.equal( result.value, true );
+
 		} );
 
 	} );
