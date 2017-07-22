@@ -72,7 +72,6 @@ const path = require( "path" );
 
 //: @server:
 
-
 describe( "nmde", ( ) => {
 
 
@@ -162,11 +161,10 @@ describe( "nmde", ( ) => {
 
 } );
 
-
 //: @end-server
 
 
-//: @client
+//: @client:
 
 describe( "nmde", ( ) => {
 
