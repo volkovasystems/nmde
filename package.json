@@ -1,6 +1,6 @@
 {
 	"name": "nmde",
-	"version": "0.4.0",
+	"version": "0.5.0",
 	"description": "Get string name property of entity.",
 	"main": "nmde.js",
 	"support": "nmde.support.js",
@@ -14,7 +14,9 @@
 		"build:deploy": "webpack --config webpack.compact.js --progress --display-modules",
 		"rebuild": "npm run build:support && npm run build:deploy",
 		"build": "npm run pristine && npm run rebuild",
-		"test:server": "mocha test.js"
+		"pretest": "npm run clear && npm run build",
+		"test": "node test.module.js",
+		"posttest": "npm run formal"
 	},
 	"repository": {
 		"type": "git",
