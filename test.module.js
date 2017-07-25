@@ -2,23 +2,23 @@
 const assert = require( "assert" );
 const nmde = require( "./nmde.js" );
 
-assert.equal( nmde( { "name": "yeah" } ), "yeah", "should have name 'yeah'" );
+assert.equal( nmde( { "name": "yeah" } ), "yeah", "should return 'yeah'" );
 
-assert.equal( nmde( function hello( ){ } ), "hello", "should have name 'hello'" );
+assert.equal( nmde( function hello( ){ } ), "hello", "should return 'hello'" );
 
 assert.equal( nmde( Error ), "Error", "should return 'Error'" );
 
-assert.equal( nmde( ) == "", true, "should return true" );
+assert.equal( nmde( ), "", "should return empty string" );
 
-assert.equal( nmde( "test" ) == "", true, "should return true" );
+assert.equal( nmde( "test" ), "", "should return empty string" );
 
-assert.equal( nmde( { } ) == "", true, "should return true" );
+assert.equal( nmde( { } ), "", "should return empty string" );
 
-assert.equal( nmde( function( ){ } ) == "", true, "should return true" );
+assert.equal( nmde( function( ){ } ), "", "should return empty string" );
 
-assert.equal( nmde( ( ) => { } ) == "", true, "should return true" );
+assert.equal( nmde( ( ) => { } ), "", "should return empty string" );
 
-assert.equal( nmde( ( entity ) => ( typeof entity == "string" ) ) == "",
-				true, "should return true" );
+assert.equal( nmde( ( entity ) => ( typeof entity == "string" ) ),
+	"", "should return empty string" );
 
 console.log( "ok" );
