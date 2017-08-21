@@ -1,130 +1,130 @@
 {
-  "stats": {
-    "suites": 9,
-    "tests": 8,
-    "passes": 8,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-20T01:31:19.931Z",
-    "end": "2017-08-20T01:31:19.949Z",
-    "duration": 18
-  },
-  "tests": [
-    {
-      "title": "should return 'yeah'",
-      "fullTitle": "nmde `nmde( { 'name': 'yeah' } )` should return 'yeah'",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should return 'hello'",
-      "fullTitle": "nmde `nmde( function hello( ){ } )` should return 'hello'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should return 'Error'",
-      "fullTitle": "nmde `nmde( Error )` should return 'Error'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should return true",
-      "fullTitle": "nmde `nmde( ) == ''` should return true",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should return true",
-      "fullTitle": "nmde `nmde( 'test' ) == ''` should return true",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should return true",
-      "fullTitle": "nmde `nmde( { } ) == ''` should return true",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should return true",
-      "fullTitle": "nmde `nmde( ( ) => { } ) == ''` should return true",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should return true",
-      "fullTitle": "nmde `nmde( ( entity ) => ( typeof entity == 'string' ) ) == ''` should return true",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ],
-  "pending": [],
-  "failures": [],
-  "passes": [
-    {
-      "title": "should return 'yeah'",
-      "fullTitle": "nmde `nmde( { 'name': 'yeah' } )` should return 'yeah'",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should return 'hello'",
-      "fullTitle": "nmde `nmde( function hello( ){ } )` should return 'hello'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should return 'Error'",
-      "fullTitle": "nmde `nmde( Error )` should return 'Error'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should return true",
-      "fullTitle": "nmde `nmde( ) == ''` should return true",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should return true",
-      "fullTitle": "nmde `nmde( 'test' ) == ''` should return true",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should return true",
-      "fullTitle": "nmde `nmde( { } ) == ''` should return true",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should return true",
-      "fullTitle": "nmde `nmde( ( ) => { } ) == ''` should return true",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should return true",
-      "fullTitle": "nmde `nmde( ( entity ) => ( typeof entity == 'string' ) ) == ''` should return true",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ]
+	"stats": {
+		"suites": 9,
+		"tests": 8,
+		"passes": 8,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-21T11:36:46.629Z",
+		"end": "2017-08-21T11:36:46.634Z",
+		"duration": 5
+	},
+	"tests": [
+		{
+			"title": "should return 'yeah'",
+			"fullTitle": "nmde `nmde( { 'name': 'yeah' } )` should return 'yeah'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return 'hello'",
+			"fullTitle": "nmde `nmde( function hello( ){ } )` should return 'hello'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return 'Error'",
+			"fullTitle": "nmde `nmde( Error )` should return 'Error'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "nmde `nmde( ) == ''` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "nmde `nmde( 'test' ) == ''` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "nmde `nmde( { } ) == ''` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "nmde `nmde( ( ) => { } ) == ''` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "nmde `nmde( ( entity ) => ( typeof entity == 'string' ) ) == ''` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should return 'yeah'",
+			"fullTitle": "nmde `nmde( { 'name': 'yeah' } )` should return 'yeah'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return 'hello'",
+			"fullTitle": "nmde `nmde( function hello( ){ } )` should return 'hello'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return 'Error'",
+			"fullTitle": "nmde `nmde( Error )` should return 'Error'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "nmde `nmde( ) == ''` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "nmde `nmde( 'test' ) == ''` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "nmde `nmde( { } ) == ''` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "nmde `nmde( ( ) => { } ) == ''` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "nmde `nmde( ( entity ) => ( typeof entity == 'string' ) ) == ''` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

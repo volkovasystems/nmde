@@ -72,79 +72,64 @@ describe( "nmde", ( ) => {
 
 
 	describe( "`nmde( { 'name': 'yeah' } )`", ( ) => {
-
 		it( "should return 'yeah'", ( ) => {
 
 			assert.equal( nmde( { 'name': 'yeah' } ), "yeah" );
 
 		} );
-
 	} );
 
-
 	describe( "`nmde( function hello( ){ } )`", ( ) => {
-
 		it( "should return 'hello'", ( ) => {
 
 			assert.equal( nmde( function hello( ){ } ), "hello" );
 
 		} );
-
 	} );
 
 
 	describe( "`nmde( Error )`", ( ) => {
-
 		it( "should return 'Error'", ( ) => {
 
 			assert.equal( nmde( Error ), "Error" );
 
 		} );
-
 	} );
 
 
 	describe( "`nmde( ) == ''`", ( ) => {
-
 		it( "should return true", ( ) => {
 
 			assert.equal( nmde( ) == "", true );
 
 		} );
-
 	} );
 
 
 	describe( "`nmde( 'test' ) == ''`", ( ) => {
-
 		it( "should return true", ( ) => {
 
 			assert.equal( nmde( "test" ) == "", true );
 
 		} );
-
 	} );
 
 
 	describe( "`nmde( { } ) == ''`", ( ) => {
-
 		it( "should return true", ( ) => {
 
 			assert.equal( nmde( { } ) == "", true );
 
 		} );
-
 	} );
 
 
 	describe( "`nmde( ( ) => { } ) == ''`", ( ) => {
-
 		it( "should return true", ( ) => {
 
 			assert.equal( nmde( ( ) => { } ) == "", true );
 
 		} );
-
 	} );
 
 

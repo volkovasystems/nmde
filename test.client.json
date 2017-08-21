@@ -1,0 +1,308 @@
+{
+	"state": {
+		"passed": 8,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-21T11:36:47.922Z",
+	"end": "2017-08-21T11:37:20.859Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "nmde",
+			"duration": 0,
+			"start": "2017-08-21T11:37:20.310Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "nmde",
+			"duration": 371,
+			"start": "2017-08-21T11:37:20.310Z",
+			"end": "2017-08-21T11:37:20.681Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-21T11:37:20.312Z",
+					"end": "2017-08-21T11:37:20.312Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "nmde",
+					"associatedTest": "should return 'yeah'"
+				},
+				{
+					"start": "2017-08-21T11:37:20.397Z",
+					"end": "2017-08-21T11:37:20.397Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "nmde",
+					"associatedTest": "should return 'yeah'"
+				},
+				{
+					"start": "2017-08-21T11:37:20.398Z",
+					"end": "2017-08-21T11:37:20.398Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "nmde",
+					"associatedTest": "should return 'hello'"
+				},
+				{
+					"start": "2017-08-21T11:37:20.437Z",
+					"end": "2017-08-21T11:37:20.437Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "nmde",
+					"associatedTest": "should return 'hello'"
+				},
+				{
+					"start": "2017-08-21T11:37:20.437Z",
+					"end": "2017-08-21T11:37:20.437Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "nmde",
+					"associatedTest": "should return 'Error'"
+				},
+				{
+					"start": "2017-08-21T11:37:20.481Z",
+					"end": "2017-08-21T11:37:20.481Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "nmde",
+					"associatedTest": "should return 'Error'"
+				},
+				{
+					"start": "2017-08-21T11:37:20.482Z",
+					"end": "2017-08-21T11:37:20.482Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "nmde",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-08-21T11:37:20.515Z",
+					"end": "2017-08-21T11:37:20.515Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "nmde",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-08-21T11:37:20.515Z",
+					"end": "2017-08-21T11:37:20.515Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "nmde",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-08-21T11:37:20.549Z",
+					"end": "2017-08-21T11:37:20.550Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "nmde",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-08-21T11:37:20.550Z",
+					"end": "2017-08-21T11:37:20.550Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "nmde",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-08-21T11:37:20.600Z",
+					"end": "2017-08-21T11:37:20.600Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "nmde",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-08-21T11:37:20.601Z",
+					"end": "2017-08-21T11:37:20.601Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "nmde",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-08-21T11:37:20.637Z",
+					"end": "2017-08-21T11:37:20.638Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "nmde",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-08-21T11:37:20.639Z",
+					"end": "2017-08-21T11:37:20.642Z",
+					"duration": 3,
+					"title": "\"before each\" hook",
+					"associatedSuite": "nmde",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-08-21T11:37:20.681Z",
+					"end": "2017-08-21T11:37:20.681Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "nmde",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-08-21T11:37:20.683Z",
+					"end": "2017-08-21T11:37:20.683Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "nmde"
+				}
+			]
+		},
+		{
+			"name": "`nmde( { 'name': 'yeah' } )`",
+			"duration": 86,
+			"start": "2017-08-21T11:37:20.311Z",
+			"end": "2017-08-21T11:37:20.397Z",
+			"tests": [
+				{
+					"name": "should return 'yeah'",
+					"start": "2017-08-21T11:37:20.311Z",
+					"end": "2017-08-21T11:37:20.396Z",
+					"duration": 85,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`nmde( function hello( ){ } )`",
+			"duration": 40,
+			"start": "2017-08-21T11:37:20.397Z",
+			"end": "2017-08-21T11:37:20.437Z",
+			"tests": [
+				{
+					"name": "should return 'hello'",
+					"start": "2017-08-21T11:37:20.397Z",
+					"end": "2017-08-21T11:37:20.436Z",
+					"duration": 39,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`nmde( Error )`",
+			"duration": 44,
+			"start": "2017-08-21T11:37:20.437Z",
+			"end": "2017-08-21T11:37:20.481Z",
+			"tests": [
+				{
+					"name": "should return 'Error'",
+					"start": "2017-08-21T11:37:20.437Z",
+					"end": "2017-08-21T11:37:20.481Z",
+					"duration": 44,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`nmde( ) == ''`",
+			"duration": 34,
+			"start": "2017-08-21T11:37:20.481Z",
+			"end": "2017-08-21T11:37:20.515Z",
+			"tests": [
+				{
+					"name": "should return true",
+					"start": "2017-08-21T11:37:20.481Z",
+					"end": "2017-08-21T11:37:20.515Z",
+					"duration": 34,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`nmde( 'test' ) == ''`",
+			"duration": 35,
+			"start": "2017-08-21T11:37:20.515Z",
+			"end": "2017-08-21T11:37:20.550Z",
+			"tests": [
+				{
+					"name": "should return true",
+					"start": "2017-08-21T11:37:20.515Z",
+					"end": "2017-08-21T11:37:20.548Z",
+					"duration": 33,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`nmde( { } ) == ''`",
+			"duration": 50,
+			"start": "2017-08-21T11:37:20.550Z",
+			"end": "2017-08-21T11:37:20.600Z",
+			"tests": [
+				{
+					"name": "should return true",
+					"start": "2017-08-21T11:37:20.550Z",
+					"end": "2017-08-21T11:37:20.600Z",
+					"duration": 50,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`nmde( ( ) => { } ) == ''`",
+			"duration": 37,
+			"start": "2017-08-21T11:37:20.601Z",
+			"end": "2017-08-21T11:37:20.638Z",
+			"tests": [
+				{
+					"name": "should return true",
+					"start": "2017-08-21T11:37:20.601Z",
+					"end": "2017-08-21T11:37:20.637Z",
+					"duration": 36,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`nmde( ( entity ) => ( typeof entity == 'string' ) ) == ''`",
+			"duration": 43,
+			"start": "2017-08-21T11:37:20.638Z",
+			"end": "2017-08-21T11:37:20.681Z",
+			"tests": [
+				{
+					"name": "should return true",
+					"start": "2017-08-21T11:37:20.638Z",
+					"end": "2017-08-21T11:37:20.681Z",
+					"duration": 43,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
